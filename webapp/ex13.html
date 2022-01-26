@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트예제</h1>
+</body>
+
+<script type="text/javascript">
+	/* 배열 */
+ 	var array = [273, 32, 103, 57, 52]
+	
+	console.log(array[0]);
+ 	console.log(array[1]);
+ 	console.log(array[2]);
+ 	console.log(array[3]);
+ 	console.log(array[4]);
+ 	console.log(array[5]);
+	
+ 	/* 이렇게도 넣을 수 있음 
+ 	var array = [];
+ 	array[0] = 273;
+ 	array[1] = 32;
+ 	 */
+ 	for(var i=0; i<array.length; i++){
+ 		console.log(array[i]);
+ 	}
+ 	
+ 	 //자료형 달라도 배열에 들어감
+ 	 var array2 = [];
+ 	 array2[0] = 1;
+ 	 array2[1] = 2.5;
+ 	 array2[2] = 'a';
+ 	 array2[3] = 'hello 안녕'
+
+	for(var i=0; i<array2.length; i++){
+ 		console.log(array2[i]);
+ 	}
+</script>
+</html>
