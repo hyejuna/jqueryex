@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+	<p id="p1"> abcdefghijklmn </p>
+	<p id="p2"> 학교종이 땡땡땡 abcdefg </p>
+</body>
+
+<!-- text 변경 : 선택자.text(""); -->
+<script type="text/javascript">
+	$("#p1").text("가나다라마바사"); // text 변경
+	
+	var text = $("#p2").text(); // ()안에 값 없으면 text 값 가져옴.
+	console.log(text);
+
+</script>	
+
+</html>

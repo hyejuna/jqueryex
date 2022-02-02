@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+
+</body>
+
+<!-- id 사용하지 않고 li 하나하나 구분해서 클릭 가능. -> $(this) -->
+<script type="text/javascript">
+	$("li").on("click", function(){ //감시는 li 요소 4개 모두 감시
+		var tag = $(this); 
+		tag.html("<strong>나혜주</strong>");
+	});
+
+	/* 
+	$("li").on("click", function(){
+		var tag = $(this);
+		var tagId = tag.attr("id"); // 클릭한 요소의 id 불러옴.
+		console.log(tagId);
+	}); 
+	*/
+	
+</script>
+
+</html>

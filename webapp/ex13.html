@@ -39,5 +39,25 @@
 	for(var i=0; i<array2.length; i++){
  		console.log(array2[i]);
  	}
+ 	 
+ 	 /////////
+ 	 console.log("======");
+ 	 
+ 	 var array = [272, "String", true, sum(5,2),[111,222],function(){return 3+4;}];
+ 	 //console.log(array); // toString 같은거임
+ 	 
+ 	 console.log(array[4][0]);
+ 	 console.log(array[5]); //f(){return 3+4;} 출력 됨
+ 	 console.log(array[5]());//7 출력됨
+ 	 
+ 	 function sum(a,b){
+ 		 return a+b;
+ 	 }
+ 	 
+ 	 console.log("======");
+ 	 var iArray = [];
+ 	 
+ 	 iArray.push(3); //현재 있는 배열에 끝에 3 추가
+ 	 iArray.pop(); // 배열 가장 끝 데이터 삭제
 </script>
 </html>

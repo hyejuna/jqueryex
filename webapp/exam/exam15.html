@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jqueryex/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<ul>
+		<li id="first" class="red">첫번째 아이템입니다.</li>
+		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
+		<li id="third" class="del">세번째아이템입니다.</li>
+		<li><strong>네번째 아이템입니다.</strong></li>
+		
+	</ul>
+	<button id="btn" type="button">li 태그 추가버튼 </button>
+</body>
+
+
+<script type="text/javascript">
+	/* li요소 클릭 시 콘솔에 출력 + text 바꿈.(새로 생긴 애들까지 적용 위해 ul을 감시.) */
+	$("ul").on("click", "li", function(){ //ul을 감시하는데 실제 동작은 li가 해라.(위임)
+		var $this = $(this);
+		console.log($this.text());
+		
+		$this.text("나혜주");
+	});
+	
+	
+	/* 이건 버튼 눌러서 추가한 애들이 안먹음.
+	$("li").on("click", function(){
+		var tag = $(this);
+		tag.text();
+		console.log(tag.text());
+	});
+	*/
+	
+	/*버튼 추가 시 li 요소 추가  */
+	$("#btn").on("click", function(){ //이때만 쓰는 함수라 굳이 이름 안쓰는 익명함수 씀.
+		$("ul").append("<li id='5'>다섯번째 아이템입니다.</li>");
+		$("ul").append("<li id='6'>여섯번째 아이템입니다.</li>");
+		$("ul").append("<li id='7'>일곱번째 아이템입니다.</li>");
+	});
+
+</script>
+
+</html>
